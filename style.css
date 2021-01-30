@@ -1,0 +1,28 @@
+
+body {
+  background-color: rgb(144, 161, 144);
+}
+
+  #full-image {
+    position: relative;
+  }
+  
+  #full-image::after {
+    content: "";
+    background: url('img/leaf.jpg');
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #back {
+    /* this is the back of the segment */
+    background-image: url('img/leaf.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
